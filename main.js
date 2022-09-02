@@ -1,10 +1,11 @@
 import { navMenu } from "./js/menu.js";
 import { navLink } from "./js/menu.js";
 
-function changeMode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-}
+let darkToggle = document.querySelector('#darkToggle');
+
+darkToggle.addEventListener('click', ()=> {
+document.body.classList.toggle('dark');
+})
 
 window.addEventListener("load", function (params) {
     const loaded = this.document.querySelector("#load");
