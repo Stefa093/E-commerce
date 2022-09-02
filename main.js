@@ -1,18 +1,9 @@
+import { navMenu } from "./js/menu.js";
+import { navLink } from "./js/menu.js";
+
 function changeMode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
-}
-
-function show() {
-    document.getElementById("sidebar").style.width = "100vw";
-    document.getElementById("open").style.display = "none";
-    document.getElementById("close").style.display = "inline";
-}
-
-function hide() {
-    document.getElementById("sidebar").style.width = "0";
-    document.getElementById("open").style.display = "inline";
-    document.getElementById("close").style.display = "none";
 }
 
 window.addEventListener("load", function (params) {
@@ -30,3 +21,4 @@ mixitup(".prod-cont", {
         duration: 300
     }
 }).filter("all")
+
